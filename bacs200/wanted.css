@@ -35,7 +35,7 @@ h1 {
 aside {
     background-color: lightgray;
     border: solid 2px blue;
-    padding-right: 300px;
+    padding: 1px;
     float: right
 }
 footer {
