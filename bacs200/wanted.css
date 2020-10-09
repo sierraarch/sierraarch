@@ -12,6 +12,9 @@ header {
     margin: auto;
 
 }
+h1 * {
+    text-align: center;
+}
 
 main {
     border: solid 3px blue;
@@ -35,13 +38,15 @@ h1 {
 aside {
     background-color: lightgray;
     border: solid 2px blue;
-    padding: 1px;
+    padding: 20px;
     float: right
 }
 footer {
-    background-color: blue;
+    background-color: darkslategrey;
+    text-align: center;
     border: solid 3px;
-    width: 500px;
+    border-radius: 25px;
+    width: 800px;
     padding-left: 250px;
     padding-right: 250px;
     float: none 
