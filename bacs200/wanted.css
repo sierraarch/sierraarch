@@ -14,8 +14,8 @@ header {
 }
 
 main {
-    border: solid 3px black;
-    background-color: beige;
+    border: solid 3px blue;
+    background-color: darkgreen;
     font-family: Cursive, Lucida Console;
     border-radius: 25px;
     width: 900px;
