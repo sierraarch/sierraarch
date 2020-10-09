@@ -15,6 +15,7 @@ header {
 
 main {
     border: solid 3px blue;
+    padding-right: 300px;
     background-color: #2DCDCF;
     font-family: Cursive, Lucida Console;
     border-radius: 25px;
