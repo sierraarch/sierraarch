@@ -1,1 +1,68 @@
-l
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skill 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    #myProgress {
+        width: 100%;
+        background-color: black;
+    }
+
+    #myBar {
+        width: 20%;
+        height: 30px;
+        background-color: deeppink;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1 class="display-2 font-weight-bold text-center text-warning bg-dark p-3">Skill #1</h1>
+    </header>
+
+    <h1> JavaScript Progress Bar</h1>
+
+    <div id="myProgress">
+        <div id="myBar">20%</div>
+    </div>
+
+    <br>
+    <button onclick="move()">Show Progress</button>
+
+    <script>
+        var i = 0;
+
+        function move() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("myBar");
+                var width = 1;
+                var id = setInterval(frame, 50);
+
+                function frame() {
+                    if (width >= 30) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                    }
+                }
+            }
+        }
+
+    </script>
+
+    <p> Above is my example showing a progress bar. I have adjusted the colors, speed and starting/ending point of the bar.</p>
+
+    <p><a href="https://www.w3schools.com/howto/howto_js_progressbar.asp">W3Schools Example</a></p>
+
+
+</body>
+
+</html>
