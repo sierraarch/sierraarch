@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skill 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    .slidecontainer {
+        width: 100%;
+
+    }
+
+
+    .slider {
+        -webkit-appearance: none;
+
+        appearance: none;
+        width: 100%;
+
+        height: 25px;
+
+        background: hotpink;
+
+        outline: none;
+
+        opacity: 0.9;
+
+        -webkit-transition: .2s;
+
+        transition: opacity .2s;
+    }
+
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: purple;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h1 class="display-2 font-weight-bold text-center text-warning bg-dark p-3">Skill #2</h1>
+    </header>
+
+    <h1>Custom Range Slider</h1>
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+
+    <p>Above I demonstrate how to add a custom range slider to a webpage. I played around with the colors and opacity.</p>
+
+    <p><a href="https://www.w3schools.com/howto/howto_js_rangeslider.asp">W3Schools Example</a></p>
+
+</body>
+
+</html>
 
