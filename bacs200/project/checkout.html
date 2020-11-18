@@ -5,6 +5,30 @@
     <meta charset="UTF-8">
     <title>Checkout</title>
     <style>
+        .topnav {
+            background-color: #640E23;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #E1C8A2;
+            color: maroon;
+        }
+
+
+        .topnav a.active {
+            background-color: #640E23;
+            color: white;
+        }
         body {
             font-family: Arial;
             font-size: 17px;
@@ -119,6 +143,14 @@
 </head>
 
 <body>
+    <div class="topnav">
+        <a href="https://sierraarch.github.io/bacs200/project/index.html">Home</a>
+        <a href="https://sierraarch.github.io/bacs200/project/products.html">Products</a>
+        <a href="https://sierraarch.github.io/bacs200/project/donations.html">Donations</a>
+        <a href="https://sierraarch.github.io/bacs200/project/contact.html">Contact Us</a>
+        <a class="active" href="#">Checkout</a>
+    </div>
+    
     <div class="container">
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="https://i.ibb.co/P9KzTmR/love-faith.png" alt="" width="300" height="300">
